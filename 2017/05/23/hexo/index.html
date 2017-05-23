@@ -101,7 +101,7 @@
 <meta property="og:image" content="https://jiaxthome.github.io/blog/2017/05/23/hexo/nodejs.png">
 <meta property="og:image" content="https://jiaxthome.github.io/blog/2017/05/23/hexo/new_branch.png">
 <meta property="og:image" content="https://jiaxthome.github.io/blog/2017/05/23/hexo/default_branch.png">
-<meta property="og:updated_time" content="2017-05-23T09:41:00.788Z">
+<meta property="og:updated_time" content="2017-05-23T09:45:28.300Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github搭建个人博客">
 <meta name="twitter:description" content="配置github端准备github配置前提：  已申请github账号 本机已安装git 本机ssh key已配置到github  以上操作，不明白的可自行网上搜索 创建github Pages（1）新建一个repository库（名称随便写，没必要一定是xxx.github.io）（2）配置github pages在settings面板中选择将”master”分支作为github pages站点">
@@ -298,7 +298,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-23T17:41:00+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-23T17:45:28+08:00">
                 2017-05-23
               </time>
             
@@ -362,8 +362,9 @@
 <li>本机ssh key已配置到github</li>
 </ol>
 <p>以上操作，不明白的可自行网上搜索</p>
-<h2 id="创建github-Pages"><a href="#创建github-Pages" class="headerlink" title="创建github Pages"></a>创建github Pages</h2><p>（1）新建一个repository库（名称随便写，没必要一定是xxx.github.io）<br><img src="/blog/2017/05/23/hexo/new_rep.png" alt="image"><br>（2）配置github pages<br>在settings面板中选择将”master”分支作为github pages站点</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><img src="/blog/2017/05/23/hexo/github_pages.png" alt="image"></h2><h1 id="配置hexo端"><a href="#配置hexo端" class="headerlink" title="配置hexo端"></a>配置hexo端</h1><h2 id="安装Node-js和npm"><a href="#安装Node-js和npm" class="headerlink" title="安装Node.js和npm"></a>安装Node.js和npm</h2><p>Node.js是hexo的运行环境，npm是Node.js的包管理器，这两个是hexo运行的必要工具，可去<a href="http://nodejs.cn/" target="_blank" rel="external">中文官网</a> 下载最新版本<br><img src="/blog/2017/05/23/hexo/nodejs.png" alt="image"><br>解压tar.xz格式并移动到/usr/local/node</p>
+<h2 id="创建github-Pages"><a href="#创建github-Pages" class="headerlink" title="创建github Pages"></a>创建github Pages</h2><p>（1）新建一个repository库（名称随便写，没必要一定是xxx.github.io）<br><img src="/blog/2017/05/23/hexo/new_rep.png" alt="image"><br>（2）配置github pages<br>在settings面板中选择将”master”分支作为github pages站点<br><img src="/blog/2017/05/23/hexo/github_pages.png" alt="image"></p>
+<hr>
+<h1 id="配置hexo端"><a href="#配置hexo端" class="headerlink" title="配置hexo端"></a>配置hexo端</h1><h2 id="安装Node-js和npm"><a href="#安装Node-js和npm" class="headerlink" title="安装Node.js和npm"></a>安装Node.js和npm</h2><p>Node.js是hexo的运行环境，npm是Node.js的包管理器，这两个是hexo运行的必要工具，可去<a href="http://nodejs.cn/" target="_blank" rel="external">中文官网</a> 下载最新版本<br><img src="/blog/2017/05/23/hexo/nodejs.png" alt="image"><br>解压tar.xz格式并移动到/usr/local/node</p>
 <pre><code>$ xz -d node-v6.10.3-linux-x64.tar.xz
 $ tar -xvf node-v6.10.3-linux-x64.tar
 $ sudo mv node-v6.10.3-linux-x64 /usr/local/node
@@ -615,7 +616,7 @@ $ git checkout -b backup remotes/origin/backup
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#配置github端"><span class="nav-number">1.</span> <span class="nav-text">配置github端</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备"><span class="nav-number">1.1.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建github-Pages"><span class="nav-number">1.2.</span> <span class="nav-text">创建github Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.3.</span> <span class="nav-text"></span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置hexo端"><span class="nav-number">2.</span> <span class="nav-text">配置hexo端</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Node-js和npm"><span class="nav-number">2.1.</span> <span class="nav-text">安装Node.js和npm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.2.</span> <span class="nav-text">安装hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#联调与发布"><span class="nav-number">3.</span> <span class="nav-text">联调与发布</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更换主题"><span class="nav-number">4.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#图片存储"><span class="nav-number">5.</span> <span class="nav-text">图片存储</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备份与恢复"><span class="nav-number">6.</span> <span class="nav-text">备份与恢复</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#配置github端"><span class="nav-number">1.</span> <span class="nav-text">配置github端</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备"><span class="nav-number">1.1.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建github-Pages"><span class="nav-number">1.2.</span> <span class="nav-text">创建github Pages</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置hexo端"><span class="nav-number">2.</span> <span class="nav-text">配置hexo端</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Node-js和npm"><span class="nav-number">2.1.</span> <span class="nav-text">安装Node.js和npm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.2.</span> <span class="nav-text">安装hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#联调与发布"><span class="nav-number">3.</span> <span class="nav-text">联调与发布</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更换主题"><span class="nav-number">4.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#图片存储"><span class="nav-number">5.</span> <span class="nav-text">图片存储</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备份与恢复"><span class="nav-number">6.</span> <span class="nav-text">备份与恢复</span></a></li></ol></div>
             
 
           </div>
