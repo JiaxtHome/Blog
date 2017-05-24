@@ -101,7 +101,7 @@
 <meta property="og:image" content="https://jiaxthome.github.io/blog/2017/05/24/hexo/new_branch.png">
 <meta property="og:image" content="https://jiaxthome.github.io/blog/2017/05/24/hexo/nodejs.png">
 <meta property="og:image" content="https://jiaxthome.github.io/blog/2017/05/24/hexo/default_branch.png">
-<meta property="og:updated_time" content="2017-05-24T07:18:20.390Z">
+<meta property="og:updated_time" content="2017-05-24T07:37:11.421Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github搭建个人博客">
 <meta name="twitter:description" content="配置github端准备github配置前提：  已申请github账号 本机已安装git 本机ssh key已配置到github  以上操作，不明白的可自行网上搜索 创建GitHub Pages（1）新建一个repository库（名称随便写，没必要一定是xxx.github.io）（2）配置github pages在settings面板中选择将”master”分支作为github pages站点">
@@ -298,7 +298,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-24T15:18:20+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-24T15:37:11+08:00">
                 2017-05-24
               </time>
             
@@ -362,7 +362,7 @@
 <li>本机ssh key已配置到github</li>
 </ol>
 <p>以上操作，不明白的可自行网上搜索</p>
-<h2 id="创建GitHub-Pages"><a href="#创建GitHub-Pages" class="headerlink" title="创建GitHub Pages"></a>创建GitHub Pages</h2><p>（1）新建一个repository库（名称随便写，没必要一定是xxx.github.io）<br><img src="/blog/2017/05/24/hexo/new_rep.png" alt="image"><br>（2）配置github pages<br>在settings面板中选择将”master”分支作为github pages站点<br><img src="/blog/2017/05/24/hexo/github_pages.png" alt="image"><br>（3）新建一个backup分支，后面备份的时候会用到<br><img src="/blog/2017/05/24/hexo/new_branch.png" alt="image"> </p>
+<h2 id="创建GitHub-Pages"><a href="#创建GitHub-Pages" class="headerlink" title="创建GitHub Pages"></a>创建GitHub Pages</h2><p>（1）新建一个repository库（名称随便写，没必要一定是xxx.github.io）<br><img src="/blog/2017/05/24/hexo/new_rep.png" alt="image"><br>（2）配置github pages<br>在settings面板中选择将”master”分支作为github pages站点<br><img src="/blog/2017/05/24/hexo/github_pages.png" alt="image"><br>（3）新建一个backup分支，后面备份的时候会用到<br><img src="/blog/2017/05/24/hexo/new_branch.png" alt="image"><br>github端配置完成～</p>
 <hr>
 <h1 id="配置hexo端"><a href="#配置hexo端" class="headerlink" title="配置hexo端"></a>配置hexo端</h1><h2 id="安装Node-js和npm"><a href="#安装Node-js和npm" class="headerlink" title="安装Node.js和npm"></a>安装Node.js和npm</h2><p>Node.js是hexo的运行环境，npm是Node.js的包管理器，这两个是hexo运行的必要工具<br>（1）去<a href="http://nodejs.cn/" target="_blank" rel="external"><strong>Node.js中文官网</strong></a> 下载最新版本<br><img src="/blog/2017/05/24/hexo/nodejs.png" alt="image"><br>（2）解压tar.xz格式并移动到/usr/local/node</p>
 <pre><code>$ xz -d node-v6.10.3-linux-x64.tar.xz
@@ -372,7 +372,7 @@ $ sudo mv node-v6.10.3-linux-x64 /usr/local/node
 <pre><code>$ sudo gedit /etc/profile
 </code></pre><p>在最后添加如下一行</p>
 <pre><code>export PATH=/usr/local/node/bin:$PATH
-</code></pre><p>重启或临时导入环境变量</p>
+</code></pre><p>重启电脑或导入环境变量</p>
 <pre><code>$ source /etc/profile    
 </code></pre><p>（4）检测</p>
 <pre><code>$ node -v
@@ -380,16 +380,19 @@ $ sudo mv node-v6.10.3-linux-x64 /usr/local/node
 $ npm -v
    3.10.10
 </code></pre><p>如果版本显示正常，则代表安装完成。</p>
-<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>hexo命令行安装即可，详细介绍可以查询<a href="https://hexo.io/" target="_blank" rel="external"><strong>hexo官网</strong></a></p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>直接命令行安装</p>
 <pre><code>$ sudo npm install -g hexo-cli
-</code></pre><p>进入工作目录，初始化hexo</p>
+</code></pre><p>新建站点目录，初始化hexo</p>
 <pre><code>$ cd blog
 $ hexo init //初始化hexo到当前目录
 $ hexo g //生成静态网页
 $ hexo s //启动本地服务器
-</code></pre><p>此时，在浏览器输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 就可以浏览效果了。</p>
+</code></pre><p>此时，在浏览器输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 就可以在本地浏览效果了。</p>
 <hr>
-<h1 id="联调与发布"><a href="#联调与发布" class="headerlink" title="联调与发布"></a>联调与发布</h1><p>下面我们需要将本地静态网页发布到github上。<br>（1）配置站点配置文件_config.yml（位于站点主目录下，还有一个主题配置文件位于themes对应主题下）</p>
+<h1 id="联调与发布"><a href="#联调与发布" class="headerlink" title="联调与发布"></a>联调与发布</h1><p>下面我们需要将本地静态网页发布到github上。<br>（1）配置站点配置文件_config.yml</p>
+<blockquote>
+<p>配置文件有两个：一个是站点配置文件，位于站点主目录下；另一个是主题配置文件，位于themes目录对应主题下</p>
+</blockquote>
 <pre><code>deploy:
       type: git
       repository: git@github.com:JiaxtHome/blog.git
