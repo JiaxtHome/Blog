@@ -4,8 +4,8 @@
 
 # Site
 title: 西贝雪
-subtitle: 个人博客
-description: 这个世界很大，除非你驻足脚下
+subtitle: 这个世界很大，除非你驻足脚下
+description: 个人博客
 author: 西贝雪
 language: zh-Hans
 timezone:
@@ -25,7 +25,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: [baidu_verify_R9MZjdMkXT.html, google0f8fac7da2b48ef8.html]
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -40,7 +40,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
 
 # Category & Tag
