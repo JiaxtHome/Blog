@@ -101,7 +101,7 @@
 <meta property="og:image" content="https://jiaxthome.github.io/blog/2017/05/24/hexo/new_branch.png">
 <meta property="og:image" content="https://jiaxthome.github.io/blog/2017/05/24/hexo/nodejs.png">
 <meta property="og:image" content="https://jiaxthome.github.io/blog/2017/05/24/hexo/default_branch.png">
-<meta property="og:updated_time" content="2017-05-24T07:39:07.583Z">
+<meta property="og:updated_time" content="2017-05-24T07:48:31.969Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github搭建个人博客">
 <meta name="twitter:description" content="配置github端准备github配置前提：  已申请github账号 本机已安装git 本机ssh key已配置到github  以上操作，不明白的可自行网上搜索 创建GitHub Pages（1）新建一个repository库（名称随便写，没必要一定是xxx.github.io）（2）配置github pages在settings面板中选择将”master”分支作为github pages站点">
@@ -298,7 +298,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-24T15:39:07+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-24T15:48:31+08:00">
                 2017-05-24
               </time>
             
@@ -445,22 +445,22 @@ scheme: Muse
 <li>将本地资源备份到backup分支，用git做同步管理</li>
 <li>在需要协同工作的多个电脑上都安装hexo环境</li>
 </ol>
-<p>这样就实现了backup分支管理资源，master分支发布网页，具体步骤如下：<br>（1）将backup分支设置为默认分支<br><img src="/blog/2017/05/24/hexo/default_branch.png" alt="image"><br>注：如果之前忘记建backup分支，现在新建backup分支会包含master分支内容，同步比较麻烦，建议直接重建仓库。</p>
-<p>（2）新建.gitignore文件</p>
+<p>这样就实现了backup分支管理资源，master分支发布网站，具体步骤如下：<br><strong>（1）将backup分支设置为默认分支</strong><br><img src="/blog/2017/05/24/hexo/default_branch.png" alt="image"><br>注：如果之前忘记建backup分支，现在新建backup分支会包含master分支内容，同步比较麻烦，建议直接重建仓库。</p>
+<p><strong>（2）新建.gitignore文件</strong></p>
 <pre><code>/.deploy_git //部署用的文件，不需要备份
 /public //生成的网站内容，每次部署都会更新，不需要备份
 db.json //一些缓存数据，每次部署都会更新，不需要备份
-</code></pre><p>（3）初始化本地仓库</p>
+</code></pre><p><strong>（3）初始化本地仓库</strong></p>
 <pre><code>$ git init
 $ git remote add origin git@github.com:JiaxtHome/blog.git
-</code></pre><p>（4）上传本地资源</p>
+</code></pre><p><strong>（4）上传本地资源</strong></p>
 <pre><code>$ git add .
 $ git commit -m &quot;init&quot;
 $ git push origin backup
-</code></pre><p>（5）新电脑同步资源</p>
+</code></pre><p><strong>（5）新电脑同步资源</strong></p>
 <pre><code>$ git fetch --all
 $ git checkout -b backup remotes/origin/backup
-</code></pre><p>重新发布后push到远程即可。</p>
+</code></pre><p>重新编辑发布后，push到远程同步。</p>
 
       
     </div>
