@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,7 +35,7 @@
 
   
   
-  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -69,9 +69,9 @@
 
 
 
-<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/blog/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -83,7 +83,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico?v=5.1.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
 
 
 
@@ -94,7 +94,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo+github搭建个人博客">
 <meta property="og:url" content="https://jiaxthome.github.io/blog/2017/05/24/hexo/index.html">
-<meta property="og:site_name" content="西贝雪">
+<meta property="og:site_name" content="飞鱼">
 <meta property="og:description" content="配置github端准备github配置前提：  已申请github账号 本机已安装git 本机ssh key已配置到github  以上操作，不明白的可自行网上搜索 创建GitHub Pages（1）新建一个repository库（名称随便写，没必要一定是xxx.github.io）（2）配置github pages在settings面板中选择将”master”分支作为github pages站点">
 <meta property="og:image" content="https://jiaxthome.github.io/blog/2017/05/24/hexo/new_rep.png">
 <meta property="og:image" content="https://jiaxthome.github.io/blog/2017/05/24/hexo/github_pages.png">
@@ -112,8 +112,8 @@
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/blog/',
-    scheme: 'Muse',
+    root: '/',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
@@ -139,7 +139,7 @@
 
 
 
-  <title>hexo+github搭建个人博客 | 西贝雪</title>
+  <title>hexo+github搭建个人博客 | 飞鱼</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -174,9 +174,9 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/blog/"  class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">西贝雪</span>
+        <span class="site-title">飞鱼</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -202,7 +202,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/blog/" rel="section">
+          <a href="/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -212,7 +212,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/blog/categories" rel="section">
+          <a href="/categories" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
@@ -222,7 +222,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/blog/archives" rel="section">
+          <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -232,7 +232,7 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/blog/tags" rel="section">
+          <a href="/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
@@ -269,16 +269,16 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://jiaxthome.github.io/blog/blog/2017/05/24/hexo/">
+    <link itemprop="mainEntityOfPage" href="https://jiaxthome.github.io/blog/2017/05/24/hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="西贝雪">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/uploads/avatar.jpg">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="西贝雪">
+      <meta itemprop="name" content="飞鱼">
     </span>
 
     
@@ -321,7 +321,7 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/hexo/" itemprop="url" rel="index">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
                     <span itemprop="name">hexo</span>
                   </a>
                 </span>
@@ -497,7 +497,7 @@ $ git checkout -b backup remotes/origin/backup
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/2017/05/22/11/" rel="next" title="markdown test">
+              <a href="/2017/05/22/11/" rel="next" title="markdown test">
                 <i class="fa fa-chevron-left"></i> markdown test
               </a>
             
@@ -565,7 +565,7 @@ $ git checkout -b backup remotes/origin/backup
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/blog/uploads/avatar.jpg"
+               src="/uploads/avatar.jpg"
                alt="西贝雪" />
           <p class="site-author-name" itemprop="name">西贝雪</p>
            
@@ -576,7 +576,7 @@ $ git checkout -b backup remotes/origin/backup
 
           
             <div class="site-state-item site-state-posts">
-              <a href="/blog/archives">
+              <a href="/archives">
                 <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
@@ -674,7 +674,7 @@ $ git checkout -b backup remotes/origin/backup
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+    NexT.Pisces
   </a>
 </div>
 
@@ -713,6 +713,8 @@ $ git checkout -b backup remotes/origin/backup
   
 
 
+  
+
 
 
 
@@ -724,46 +726,56 @@ $ git checkout -b backup remotes/origin/backup
 
 
   
-  <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.1"></script>
-
-  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.1"></script>
-
-
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
   
-  
-
-  
-  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.1"></script>
-<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.1"></script>
-
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
 
 
 
@@ -815,6 +827,7 @@ $ git checkout -b backup remotes/origin/backup
   
 
   
+
 
 </body>
 </html>
