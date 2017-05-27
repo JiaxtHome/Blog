@@ -1,6 +1,7 @@
 ---
 title: hexo+github搭建个人博客
-categories: hexo
+categories: Hexo
+tags: [hexo,next,个人博客]
 ---
 
 # 配置github端
