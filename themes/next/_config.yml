@@ -163,7 +163,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-avatar: /uploads/avatar.jpg
+avatar: /uploads/avatar.jpeg
 reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
 wechatpay: https://static.oschina.net/uploads/space/2017/0527/123618_fOuK_2831565.png
 
